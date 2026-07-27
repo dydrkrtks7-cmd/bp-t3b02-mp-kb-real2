@@ -1,345 +1,77 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="acid-yellow" data-build="1a2b3c4d">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>마포 노래방 찐후기 - 정보 | T3B02 마포 노래방</title>
-    <meta name="description" content="마포 노래방 찐후기 상세 정보: 프리미엄 방음 시설, 2025년 최신 음향 장비, 주차 30대 가능. 합정·홍대 인근 최고 평점 4.8. 010-6279-0862 예약.">
-    <meta name="keywords" content="마포 노래방, 마포 노래방 찐후기, 마포구 노래방, 홍대 노래방, 합정 노래방, 마포 프리미엄 노래방, 마포 방음 노래방, 마포 주차 노래방">
-    <link rel="canonical" href="https://t3b02-mp-kb-real2.pages.dev/info">
-    <meta property="og:title" content="마포 노래방 찐후기 - T3B02 마포 노래방 정보">
-    <meta property="og:description" content="마포 노래방 찐후기: 합정·홍대 인근 최상위 프리미엄 노래방. 방음·시설·주차 완비. 평점 4.8. 2025년 기준 업계 최고 수준.">
-    <style>
-        /* ---------- RESET ---------- */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        /* ---------- BASE ---------- */
-        html {
-            background: #0a0a0a;
-            color: #e0e0e0;
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
-            border-left: 4px solid #ff007f;
-            border-right: 4px solid #00f0ff;
-        }
-        /* ---------- TYPOGRAPHY ---------- */
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(255,0,127,0.5), 0 0 20px rgba(0,240,255,0.3);
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            border-bottom: 3px solid #ff007f;
-            display: inline-block;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid #00f0ff;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-        p, li, blockquote {
-            font-size: 1.1rem;
-            color: #c0c0c0;
-            max-width: 65ch;
-        }
-        a {
-            color: #00f0ff;
-            text-decoration: underline wavy 2px;
-            transition: all 0.3s;
-        }
-        a:hover {
-            color: #ff007f;
-            text-decoration: underline double;
-        }
-        /* ---------- SPACE ---------- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 4rem;
-            padding: 2rem;
-            background: rgba(0,0,0,0.6);
-            border: 1px solid #333;
-            box-shadow: 8px 8px 0 rgba(255,0,127,0.2);
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .card {
-            background: #111;
-            border: 2px solid #222;
-            padding: 1.5rem;
-            transition: all 0.3s;
-        }
-        .card:hover {
-            border-color: #ff007f;
-            transform: translate(-2px, -2px);
-            box-shadow: 4px 4px 0 #00f0ff;
-        }
-        .card h3 {
-            margin-bottom: 1rem;
-        }
-        .card p {
-            font-size: 1rem;
-        }
-        blockquote {
-            border-left: 5px solid #ff007f;
-            padding-left: 1.5rem;
-            margin: 1.5rem 0;
-            font-style: italic;
-            color: #aaa;
-        }
-        .highlight {
-            background: #ff007f22;
-            padding: 0.1rem 0.3rem;
-            border-left: 3px solid #ff007f;
-        }
-        /* ---------- NAV ---------- */
-        nav {
-            background: #0a0a0a;
-            border-bottom: 3px solid #ff007f;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 0.3rem 0.5rem;
-            border: 2px solid transparent;
-        }
-        .nav-links a:hover {
-            border-color: #00f0ff;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 3px;
-            background: #00f0ff;
-            margin: 4px 0;
-            transition: 0.3s;
-        }
-        .tel-link {
-            background: #ff007f;
-            color: #fff;
-            padding: 0.5rem 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            border: 2px solid #00f0ff;
-            transition: 0.3s;
-        }
-        .tel-link:hover {
-            background: #00f0ff;
-            color: #0a0a0a;
-            border-color: #ff007f;
-        }
-        /* ---------- FOOTER ---------- */
-        footer {
-            background: #0a0a0a;
-            border-top: 3px solid #00f0ff;
-            padding: 2rem;
-            text-align: center;
-            margin-top: auto;
-        }
-        footer p {
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        /* ---------- RESPONSIVE 768 ---------- */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #0a0a0a;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                padding: 1rem;
-                border-bottom: 3px solid #ff007f;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            .container {
-                padding: 1rem;
-            }
-            section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>마포 노래방 정보 – 자세히 알아보는 현장 가이드</title>
+  <meta name="description" content="마포 노래방을 처음 찾는 사람들을 위한 종합 정보 페이지. 시설 규모, 이용 가능한 기기, 예약 절차와 주의 사항을 상세히 정리했습니다.">
+  <meta name="keywords" content="마포 노래방, 노래방 시설, 마포 가요방, 예약 안내, 이용 가이드">
+  <link rel="canonical" href="https://mapo-karaoke-review.pbn-builder.xyz/about.html">
+  <meta name="generator" content="custom-cms-az12">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-acid-yellow">
+  <meta property="og:title" content="마포 노래방 정보 – 현장 가이드">
+  <meta property="og:description" content="마포 노래방을 이용하기 전 반드시 확인해야 할 시설 특징, 예약 방법, 그리고 현장 매너를 정리했습니다.">
+  <meta property="og:url" content="https://mapo-karaoke-review.pbn-builder.xyz/about.html">
 </head>
 <body>
-
-<!-- 네비게이션 -->
-<nav>
-    <div style="font-size:1.5rem; font-weight:bold; color:#ff007f;">T3B02</div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="/">홈</a></li>
-        <li><a href="/info" style="border-color:#00f0ff;">정보</a></li>
-        <li><a href="/review">후기</a></li>
-        <li><a href="/price">가격</a></li>
-        <li><a href="/location">오시는 길</a></li>
+  <!-- Navigation (공통) -->
+  <nav class="n-top-vu6a">
+    <ul class="r-grid-7jsj">
+      <li><a href="/home">홈</a></li>
+      <li><a href="/review">리뷰</a></li>
+      <li><a href="/info">정보</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">연락처</a></li>
     </ul>
-    <div>
-        <a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </div>
-    </div>
-</nav>
+    <div class="hamburger-menu">☰</div>
+  </nav>
 
-<script>
-function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('active');
-}
-</script>
+  <main class="k-main-lr9s">
+    <h1>마포 노래방 현장 정보</h1>
 
-<main class="container">
-
-    <!-- 히어로 섹션 -->
-    <section style="border:3px solid #ff007f; text-align:center;">
-        <h1>마포 노래방 찐후기</h1>
-        <h2 style="border:none; font-size:1.3rem; color:#00f0ff; margin-top:1rem;">프리미엄 정보 · 2025년 업데이트</h2>
-        <p style="margin:2rem auto;">합정·홍대 상권 중심, 방음·음향·청결 3관왕. <span class="highlight">평점 4.8</span> (1,247명 평가)</p>
-        <blockquote>“마포에서 가장 검증된 프리미엄 노래방. 주차 30대 가능, 24시 운영.”</blockquote>
-        <a href="tel:01062790862" style="display:inline-block; background:#ff007f; color:#fff; padding:0.8rem 2rem; font-weight:bold; margin-top:1rem; border:2px solid #00f0ff; text-decoration:none;">지금 예약: 010-6279-0862</a>
+    <!-- 섹션 1: 시설 전반 -->
+    <section class="t-body-alux">
+      <h2>공간 구성과 장비 현황</h2>
+      <p>마포 지역에 위치한 이 노래방은 2층 구조로 운영됩니다. 1층은 대형 메인 룸과 라운지형 대기 공간이 연결돼 있어, 고객이 편하게 이동할 수 있도록 설계되었습니다. 메인 룸은 방음 처리된 고성능 스피커와 최신 음향 시스템을 갖추고 있어, 저음부터 고음까지 균일한 사운드를 제공합니다.</p>
+      <p>2층에는 소형 개인실과 테마룸이 배치돼 있어 인원 규모에 따라 선택이 가능합니다. 모든 방은 24인치 풀 HD 터치스크린 마이크와 최신 가라오케 소프트웨어가 탑재돼 있어, 실시간 검색과 가사 싱크가 매끄럽게 이루어집니다. 또한, 방마다 개별 조명 조절기가 있어 사용자의 분위기에 맞춰 색과 밝기를 조절할 수 있습니다.</p>
     </section>
 
-    <!-- 상세 정보 카드 -->
-    <section>
-        <h2>시설 및 서비스 상세</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3>🔊 방음 시스템</h3>
-                <p>3중 방음벽 (석고보드+흡음재+차음필름) 적용. 객실 간 소음 전달률 0.3% 이하. KSL 2408 기준 A등급 인증.</p>
-            </div>
-            <div class="card">
-                <h3>🎤 음향 장비</h3>
-                <p>JBL SRX 800 시리즈 메인 스피커, Shure SM58 유선 마이크 4개, 디지털 리버브 시스템. 무선 마이크 8대 추가 대여 가능.</p>
-            </div>
-            <div class="card">
-                <h3>🅿️ 주차</h3>
-                <p>건물 지하 2층 전용 주차장 35대 가능. 높이 제한 2.3m. 주차 등록 후 무료 (영업시간 중).</p>
-            </div>
-            <div class="card">
-                <h3>🧼 청결 및 위생</h3>
-                <p>매일 3회 UV 살균 + 오존 소독. 객실 환기 시스템 15분 완전 교체. 식약처 위생등급 최우수.</p>
-            </div>
-        </div>
+    <!-- 섹션 2: 이용 목적별 시나리오 -->
+    <section class="t-body-alux">
+      <h2>다양한 목적에 맞는 이용 시나리오</h2>
+      <p>친구와 함께 밤새 노래를 부르고 싶다면, 대형 메인 룸을 예약해 대인원 파티를 즐길 수 있습니다. 방음 설계와 넓은 공간 덕분에 주변 소음에 방해받지 않고 자유롭게 마이크를 잡을 수 있습니다.</p>
+      <p>작은 그룹이나 커플이 조용히 노래를 즐기고 싶다면, 2층에 위치한 개인실을 선택하면 됩니다. 개인실은 외부와 완벽히 차단된 환경을 제공하므로, 사적인 대화와 감성적인 곡을 부담 없이 감상할 수 있습니다.</p>
+      <p>기업 행사나 워크숍 후의 친목 시간에도 활용이 가능합니다. 노래방 내부에는 프로젝터와 스크린이 구비돼 있어, 프레젠테이션을 이어가며 즉석에서 노래 대결을 열 수 있습니다. 이런 멀티 기능은 이벤트를 더욱 풍성하게 만들죠.</p>
     </section>
 
-    <!-- 데이터 기반 정보 -->
-    <section>
-        <h2>객관적 데이터</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:2rem;">
-            <div style="flex:1; min-width:200px;">
-                <p style="font-size:3rem; color:#ff007f; font-weight:bold;">4.8</p>
-                <p>네이버 평점<br><span class="highlight">1,247건 리뷰</span></p>
-            </div>
-            <div style="flex:1; min-width:200px;">
-                <p style="font-size:3rem; color:#00f0ff; font-weight:bold;">98%</p>
-                <p>재방문 의사<br><span class="highlight">설문조사 500명 기준</span></p>
-            </div>
-            <div style="flex:1; min-width:200px;">
-                <p style="font-size:3rem; color:#ff007f; font-weight:bold;">15</p>
-                <p>프리미엄 룸<br><span class="highlight">4인~20인 구성</span></p>
-            </div>
-        </div>
+    <!-- 섹션 3: 예약·취소 정책 -->
+    <section class="t-body-alux">
+      <h2>예약 및 취소 정책 안내</h2>
+      <p>온라인 예약 시스템을 통해 사전 예약이 권장됩니다. 예약 시 고객은 이름, 연락처, 이용 인원, 원하는 방 종류를 입력하게 되며, 실시간으로 가능한 시간대가 표시됩니다. 예약 확인 메일이 자동 발송되고, 방문 30분 전까지는 무조건 입장이 허용됩니다.</p>
+      <p>취소는 최소 2시간 전까지 가능하며, 그 이하로 취소할 경우 일부 요금이 차감됩니다. 단, 특별 이벤트 기간이나 전용 프리미엄 룸은 별도 취소 수수료가 적용될 수 있습니다. 이러한 정책은 다른 고객에게도 공평한 이용 기회를 보장하기 위한 조치이며, 사전 고지를 통해 불편을 최소화하고자 합니다.</p>
     </section>
 
-    <!-- FAQ -->
-    <section>
-        <h2>자주 묻는 질문</h2>
-        <div>
-            <h3>Q. 가격대는 어떻게 되나요?</h3>
-            <p>기본 2시간 30,000원 (주중 주간). 주말 및 심야 할증 적용. 자세한 가격표는 <a href="/price">가격 페이지</a> 참조.</p>
-        </div>
-        <div style="margin-top:2rem;">
-            <h3>Q. 예약 필수인가요?</h3>
-            <p>주말 및 황금 시간대(18시~24시)는 사전 예약 권장. <a href="tel:01062790862">010-6279-0862</a>로 전화 또는 카카오톡 예약 가능.</p>
-        </div>
-        <div style="margin-top:2rem;">
-            <h3>Q. 코인노래방과 차이점은?</h3>
-            <p>당사는 프리미엄 방음·음향·청결을 갖춘 룸 노래방입니다. 코인노래방 대비 음질, 공간, 서비스에서 차별화됩니다.</p>
-        </div>
-        <div style="margin-top:2rem;">
-            <h3>Q. 주류 반입 가능한가요?</h3>
-            <p>주류 반입 불가 (건물 내 음식점 이용 가능). 당사 무료 음료 및 간식 제공.</p>
-        </div>
+    <!-- 섹션 4: 현장 매너 및 주의사항 -->
+    <section class="t-body-alux">
+      <h2>현장에서 지켜야 할 매너와 주의사항</h2>
+      <p>노래방 내부에서는 음량을 과도하게 높이지 않도록 주의해야 합니다. 각 방에 설치된 볼륨 제한 장치는 과도한 소음으로 인한 장비 손상을 방지합니다. 또한, 방 안에서 음식물을 반입할 경우 쓰레기통에 바로 버려 주변을 깨끗하게 유지해 주세요.</p>
+      <p>마이크와 스피커는 공동 자산이므로 사용 후에는 원래 위치에 돌려놓고, 손상된 부품이 발견되면 즉시 직원에게 알리는 것이 좋습니다. 특히, 고음역대에서 장시간 마이크를 사용하면 마이크 드라이버가 과열될 수 있으니, 잠시 쉬는 시간을 가져 장비를 보호하세요.</p>
     </section>
 
-    <!-- 지역 시그널 -->
-    <section>
-        <h2>마포구 핵심 입지</h2>
-        <p>합정역 2번 출구 도보 3분, 홍대입구역 9번 출구 도보 7분. 인근 랜드마크:</p>
-        <ul style="margin-top:1rem; list-style:square; padding-left:2rem;">
-            <li>합정 카페거리 (도보 2분)</li>
-            <li>홍대 걷고 싶은 거리 (도보 8분)</li>
-            <li>망원 한강공원 (차량 5분)</li>
-            <li>마포구청 (차량 3분)</li>
-        </ul>
-        <p style="margin-top:1rem;">2025년 마포구청 인증 <span class="highlight">‘안심상권 우수업소’</span> 선정.</p>
+    <!-- 섹션 5: FAQ -->
+    <section class="t-body-alux">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q1. 현장 결제는 가능한가요?</h3>
+      <p>네, 현장에서는 현금, 신용카드, 모바일 결제 모두 가능합니다. 단, 온라인 사전 예약 시 사전 결제 옵션을 선택하면 현장 결제 절차를 생략할 수 있습니다.</p>
+      <h3>Q2. 방 안에 음료를 반입할 수 있나요?</h3>
+      <p>소형 음료(500ml 이하)만 허용됩니다. 큰 용량의 음료는 방음 효율을 저해하고 바닥을 오염시킬 위험이 있으니 입구에서 보관해 주세요.</p>
+      <h3>Q3. 장애인 접근성이 보장되나요?</h3>
+      <p>본 건물은 엘리베이터와 휠체어 전용 경사로를 갖추고 있어, 장애인 고객도 불편함 없이 이용할 수 있도록 설계되었습니다.</p>
     </section>
+  </main>
 
-</main>
-
-<footer>
-    <p>© 2025 T3B02 마포 노래방 찐후기 | 사업자등록번호: 123-45-67890 | 주소: 서울 마포구 합정동 123-45</p>
-    <p style="margin-top:0.5rem;">예약문의: <a href="tel:01062790862">010-6279-0862</a> (24시 운영)</p>
-</footer>
-
-</
+  <footer class="r-grid-7jsj">
+    <p>© 2026 마포 노래방 가이드. All rights reserved.</p>
+  </footer>
 </body>
 </html>
