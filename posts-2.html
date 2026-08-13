@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b02-mp-kb-real2</title>
+  <meta name="description" content="t3b02-mp-kb-real2에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://mapo-karaoke-review.pbn-builder.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+KR:wght@400;600;700&display=swap');
+
+ :root {
+ --primary: #111827;
+ --secondary: #f9fafb;
+ --accent: #2563eb;
+ --bg: #fafaf7;
+ --rule-color: #d1d5db;
+ --text-color: #1f2937;
+ --font-mono: 'IBM Plex Mono', monospace;
+ --font-serif: 'Noto Serif KR', serif;
+ --container: 960px;
+ --content-width: 760px;
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ background-color: var(--bg);
+ color: var(--text-color);
+ font-family: var(--font-serif);
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ min-height: 100vh;
+ }
+
+ body[data-theme="slate"] {
+ --bg: #fafaf7;
+ }
+
+ body[data-build] {
+ position: relative;
+ }
+
+ .t-img-kuwi {
+ width: 100%;
+ max-width: var(--container);
+ margin: 0 auto;
+ padding: 32px 24px 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ border-bottom: 1px solid var(--text-color);
+ padding-bottom: 16px;
+ margin-bottom: 0;
+ }
+
+ .m-btn-uzy4 {
+ font-family: var(--font-mono);
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--primary);
+ text-transform: uppercase;
+ letter-spacing: -0.5px;
+ text-decoration: none;
+ }
+
+ .t-ico-kete {
+ display: flex;
+ gap: 28px;
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+ font-weight: 500;
+ color: var(--primary);
+ }
+
+ .t-ico-kete a {
+ text-decoration: none;
+ color: var(--primary);
+ border-bottom: 1px solid transparent;
+ transition: border-color 0.2s;
+ padding-bottom: 2px;
+ }
+
+ .t-ico-kete a:hover {
+ border-bottom: 1px solid var(--primary);
+ }
+
+ .m-body-0ziu {
+ display: none;
+ background: none;
+ border: none;
+ font-family: var(--font-mono);
+ font-size: 1.5rem;
+ cursor: pointer;
+ color: var(--primary);
+ line-height: 1;
+ }
+
+ main {
+ width: 100%;
+ max-width: var(--content-width);
+ margin: 0 auto;
+ padding: 0 24px;
+ flex: 1;
+ }
+
+ section[data-v],
+ article[data-v] {
+ padding: 48px 0;
+ border-bottom: 1px solid var(--text-color);
+ width: 100%;
+ }
+
+ section[data-v]:last-of-type,
+ article[data-v]:last-of-type {
+ border-bottom: none;
+ }
+
+ .t-side-0o67 {
+ padding-top: 56px;
+ padding-bottom: 48px;
+ text-align: left;
+ border-bottom: 2px solid var(--primary);
+ }
+
+ .t-side-0o67 h1 {
+ font-family: var(--font-serif);
+ font-size: 2.8rem;
+ font-weight: 700;
+ color: var(--primary);
+ line-height: 1.3;
+ margin-bottom: 16px;
+ letter-spacing: -0.5px;
+ }
+
+ .t-side-0o67 .m-card-p850 {
+ font-family: var(--font-mono);
+ font-size: 0.95rem;
+ color: #4b5563;
+ border-top: 1px solid var(--text-color);
+ padding-top: 16px;
+ margin-top: 12px;
+ width: fit-content;
+ }
+
+ .k-list-v21m::first-letter {
+ font-family: var(--font-serif);
+ font-size: 3.8rem;
+ float: left;
+ line-height: 0.85;
+ margin-right: 12px;
+ margin-top: 6px;
+ color: var(--accent);
+ font-weight: 700;
+ }
+
+ h2 {
+ font-family: var(--font-serif);
+ font-weight: 700;
+ font-size: 1.9rem;
+ color: var(--primary);
+ margin-bottom: 20px;
+ padding-bottom: 8px;
+ border-bottom: 1px solid var(--text-color);
+ display: inline-block;
+ }
+
+ h3 {
+ font-family: var(--font-mono);
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--primary);
+ margin-bottom: 8px;
+ text-transform: uppercase;
+ }
+
+ .m-wrap-0s2o-row {
+ display: flex;
+ justify-content: space-between;
+ border-top: 1px solid var(--text-color);
+ padding: 12px 0;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ }
+
+ .m-wrap-0s2o-row:last-child {
+ border-bottom: 1px solid var(--text-color);
+ }
+
+ .m-wrap-0s2o-row span:first-child {
+ font-weight: 500;
+ color: var(--primary);
+ }
+
+ .m-wrap-0s2o-row span:last-child {
+ color: #4b5563;
+ text-align: right;
+ }
+
+ .t-box-1dby-rule-table {
+ width: 100%;
+ border-collapse: collapse;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ margin-top: 16px;
+ }
+
+ .t-box-1dby-rule-table th {
+ border-top: 2px solid var(--primary);
+ border-bottom: 2px solid var(--primary);
+ padding: 12px 8px;
+ text-align: left;
+ font-weight: 600;
+ color: var(--primary);
+ background-color: var(--secondary);
+ }
+
+ .t-box-1dby-rule-table td {
+ border-bottom: 1px solid var(--text-color);
+ padding: 12px 8px;
+ color: #4b5563;
+ }
+
+ .v-side-w0d3-row {
+ display: flex;
+ justify-content: space-between;
+ gap: 16px;
+ margin: 20px 0;
+ font-family: var(--font-mono);
+ }
+
+ .v-side-w0d3-cell {
+ flex: 1;
+ border: 1px solid var(--text-color);
+ padding: 16px;
+ text-align: center;
+ background: var(--secondary);
+ }
+
+ .v-side-w0d3-cell .k-btn-bcc3 {
+ font-size: 1.8rem;
+ font-weight: 600;
+ color: var(--primary);
+ display: block;
+ }
+
+ .v-side-w0d3-cell .r-nav-3chy {
+ font-size: 0.75rem;
+ color: #6b7280;
+ text-transform: uppercase;
+ margin-top: 8px;
+ display: block;
+ }
+
+ .k-list-mfw9-stat {
+ float: right;
+ width: 200px;
+ margin-left: 24px;
+ margin-bottom: 16px;
+ border-left: 2px solid var(--primary);
+ padding-left: 16px;
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ color: #4b5563;
+ line-height: 1.6;
+ }
+
+ .k-list-mfw9-stat strong {
+ display: block;
+ font-size: 1.2rem;
+ color: var(--primary);
+ margin-bottom: 4px;
+ }
+
+ .t-side-g0r2-item {
+ margin-bottom: 24px;
+ }
+
+ .t-side-g0r2-item h3 {
+ font-family: var(--font-mono);
+ font-weight: 600;
+ font-size: 1rem;
+ margin-bottom: 4px;
+ color: var(--accent);
+ }
+
+ .t-side-g0r2-item p {
+ color: #4b5563;
+ padding-left: 16px;
+ border-left: 1px solid var(--text-color);
+ }
+
+ .q-body-srym-bio {
+ border-top: 2px solid var(--primary);
+ padding-top: 24px;
+ margin-top: 40px;
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+ color: #4b5563;
+ display: flex;
+ gap: 16px;
+ align-items: baseline;
+ }
+
+ .q-body-srym-bio strong {
+ font-family: var(--font-serif);
+ font-size: 1.2rem;
+ color: var(--primary);
+ white-space: nowrap;
+ }
+
+ footer {
+ width: 100%;
+ max-width: var(--container);
+ margin: 0 auto;
+ padding: 24px;
+ text-align: center;
+ font-family: var(--font-mono);
+ font-size: 0.75rem;
+ color: #6b7280;
+ border-top: 1px solid var(--text-color);
+ margin-top: 40px;
+ }
+
+ .x-list-tmbu {
+ display: inline-block;
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+ padding: 10px 28px;
+ border: 1px solid var(--primary);
+ background: transparent;
+ color: var(--primary);
+ cursor: pointer;
+ border-radius: 24px;
+ text-decoration: none;
+ transition: background 0.2s, color 0.2s;
+ margin-top: 12px;
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+ }
+
+ .x-list-tmbu:hover {
+ background: var(--primary);
+ color: white;
+ }
+
+ @media (max-width: 768px) {
+ .t-img-kuwi {
+ flex-wrap: wrap;
+ }
+ .t-ico-kete {
+ display: none;
+ width: 100%;
+ flex-direction: column;
+ gap: 12px;
+ margin-top: 16px;
+ border-top: 1px solid var(--text-color);
+ padding-top: 12px;
+ }
+ .t-ico-kete.active {
+ display: flex;
+ }
+ .m-body-0ziu {
+ display: block;
+ }
+ .t-side-0o67 h1 {
+ font-size: 2rem;
+ }
+ .v-side-w0d3-row {
+ flex-direction: column;
+ }
+ .k-list-mfw9-stat {
+ float: none;
+ width: 100%;
+ margin: 16px 0;
+ border-left: none;
+ border-top: 2px solid var(--primary);
+ padding-top: 12px;
+ padding-left: 0;
+ }
+ section {
+ padding: 24px 0;
+ }
+ .t-box-1dby-rule-table {
+ font-size: 0.75rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b02-mp-kb-real2">
+  <meta property="og:description" content="t3b02-mp-kb-real2에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://mapo-karaoke-review.pbn-builder.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="t-img-kuwi">
+ <a href="#" class="m-btn-uzy4">MAPO-KR-REVIEW</a>
+ <button class="m-body-0ziu" onclick="document.querySelector('.t-ico-kete').classList.toggle('active')">☰</button>
+ <nav class="t-ico-kete">
+ <a href="#">후기</a>
+ <a href="#">용어</a>
+ <a href="#">조건</a>
+ <a href="#">FAQ</a>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0064.html">마포 노래방 찐후기 합정 셔츠룸 단골들이 뽑은 핫플 매거진과 위치 및 접근성</a>
+        <p class="post-item__summary">마포 노래방 찐후기를 살펴보며 동선을 고민하는 이들이 많습니다. 평소 합정 셔츠룸 단골들이 뽑은 핫플 매거진의 정보를 탐독하던 이들이라면 접근성의 중요성을 누구보다 잘 알 것입니다. 효율적인 이동은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0065.html">마포 노래방 찐후기 데이터 센터 광회선 최적화 전략</a>
+        <p class="post-item__summary">갑작스러운 네트워크 지연은 마치 잘 준비된 행사를 망치는 불청객과 같습니다. 마포 노래방 찐후기 콘텐츠를 작성하며 겪은 로딩 지연 현상은 알고리즘 노출의 치명적인 저해 요소로 작용했습니다. 이러한 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0298.html">마포 노래방 찐후기를 통한 홍대 노래방 추천정보 시간대 선택법</a>
+        <p class="post-item__summary">흔히 홍대 지역의 노래방은 밤늦게 가야 제맛이라는 오해가 있지만, 이는 실제 방문객들의 패턴을 완전히 반영하지 못한 편견입니다. 마포 노래방 찐후기에서 자주 지적되는 부분은 인파가 몰리는 피크 타임</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0299.html">마포 노래방 찐후기 기반의 공덕 셔츠룸 추천정보 및 셔츠룸 이용 가이드</a>
+        <p class="post-item__summary">성공적인 야간 유흥을 즐기기 위해서는 장소 선정과 서비스의 질, 그리고 투명한 운영 체계가 반드시 충족되어야 합니다. 마포 노래방 찐후기 사례를 분석해보면 이러한 기본 조건이 얼마나 중요한지 알 수</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0300.html">마포 노래방 찐후기 분석으로 보는 연남 유흥 추천정보와 선택 전략</a>
+        <p class="post-item__summary">오늘 밤 무엇을 할지 고민하고 계신가요? 평소 익숙한 장소에서 벗어나 조금 더 특별한 경험을 원하신다면 연남동 주변의 유흥 환경을 주의 깊게 살펴보는 것이 좋습니다. 마포 노래방 찐후기 데이터를 참</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0301.html">마포 노래방 찐후기 활용하여 마곡 가라오케 추천정보 검증하는 법</a>
+        <p class="post-item__summary">신뢰할 수 있는 업체를 찾는 과정은 체계적인 단계에 따라 진행되어야 합니다. 마포 노래방 찐후기를 단순히 읽는 것에 그치지 않고, 그 속에 담긴 핵심 정보를 추출하는 것이 관건입니다. 마곡 지역에서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0302.html">마포 노래방 찐후기 기반으로 분석하는 마곡 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">마포 노래방 찐후기를 살펴보면 이용객들이 시설의 수준과 서비스의 질을 어떻게 구분하는지 명확히 드러납니다. 특히 마곡 지역으로 범위를 넓히면 대형 프랜차이즈형 업소와 개인 운영 업소라는 두 가지 큰</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0303.html">마포 노래방 찐후기 활용하여 실패 없는 합정 노래방 추천정보 찾기</a>
+        <p class="post-item__summary">많은 이들이 마포 노래방 찐후기를 찾아보는 이유는 검증되지 않은 곳을 방문했다가 겪게 될 실망을 사전에 차단하기 위함입니다. 특히 합정 지역에서 경험하는 실패 사례는 대부분 예약 단계에서의 소통 부</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0304.html">마포 노래방 찐후기 살펴본 뒤 분석하는 연남 클럽 추천정보 리스트</a>
+        <p class="post-item__summary">연남동의 밤 문화를 즐기기 위해 마포 노래방 찐후기를 참고하는 것은 자연스러운 과정입니다. 하지만 클럽은 노래방과 달리 위치와 접근성, 그리고 내부 분위기가 방문의 만족도를 좌우하는 결정적 변수가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0305.html">마포 노래방 찐후기 합정 셔츠룸 추천정보 공유</a>
+        <p class="post-item__summary">오랜만에 합정 인근에서 지인들과 모임을 갖기로 하고 장소를 물색하던 중 마포 노래방 찐후기 관련 정보를 접하게 되었습니다. 단순히 노래만 부르는 곳을 넘어 조금 더 특별한 분위기를 원할 때 고려하게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0306.html">마포 노래방 찐후기 공덕 가라오케 추천정보 활용</a>
+        <p class="post-item__summary">흔히 가라오케라고 하면 밤늦은 시간대에만 활성화된다고 오해하는 경우가 많습니다. 하지만 실상은 운영 시간대에 따라 제공되는 서비스의 성격과 분위기가 크게 달라집니다. 마포 노래방 찐후기 글들을 살펴</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0307.html">마포 노래방 찐후기 상수 마사지 추천정보 안내</a>
+        <p class="post-item__summary">피로를 풀기 위해 마사지를 고려할 때 가장 먼저 충족되어야 할 조건은 시설의 청결함과 전문적인 관리사의 배치입니다. 더불어 혼자 방문하는지 혹은 일행과 함께 방문하는지에 따라 선택해야 할 매장의 규</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0308.html">마포 노래방 찐후기 기반으로 정리한 망원 노래방 추천정보</a>
+        <p class="post-item__summary">주말 저녁 마포 지역에서 즐거운 시간을 보내기 위해 괜찮은 장소를 찾고 계신가요? 수많은 매장 사이에서 나에게 꼭 맞는 곳을 고르는 일은 생각보다 까다롭습니다. 마포 노래방 찐후기 데이터를 바탕으로</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
